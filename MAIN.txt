@@ -1,0 +1,769 @@
+ * Name                                              MAIN
+ - Subclass Information                              
+ - Comments                                          
+ - Help Book Title                                   
+ * Title                                             MODULE1
+ * Console Window                                    WINDOW1
+ * Menu Module                                       DEFAULT&SMARTBAR
+ - Initial Menu                                      
+ - Defer Required Enforcement                        No
+ - Menu Role                                         
+ - Mouse Navigation Limit                            Form
+ - First Navigation Data Block                       
+ - Current Record Visual Attribute Group             
+ - Validation Unit                                   Default
+ - Interaction Mode                                  Blocking
+ - Maximum Query Time                                0
+ - Maximum Records Fetched                           0
+ - Isolation Mode                                    Read Committed
+ * Coordinate System                                 
+   ----------
+   * Coordinate System                               Real
+   * Real Unit                                       Point
+   * Default Font Scaling                            Yes
+   * Character Cell Height                           16
+   * Character Cell Width                            8
+   ----------
+ - Use 3D Controls                                   Yes
+ - Form Horizontal Toolbar Canvas                    
+ - Form Vertical Toolbar Canvas                      
+ - Direction                                         Default
+ - Triggers                                          
+ - Alerts                                            
+ - Attached PL/SQL Libraries                         
+ * Blocks                                            
+   ----------
+   * Name                                            MAIN
+   - Subclass Information                            
+   - Comments                                        
+   - Navigation Style                                Same Record
+   - Previous Navigation Data Block                  
+   - Next Navigation Data Block                      
+   - Current Record Visual Attribute Group           
+   - Query Array Size                                0
+   - Number of Records Buffered                      0
+   - Number of Records Displayed                     1
+   - Query All Records                               No
+   - Record Orientation                              Vertical
+   - Single Record                                   No
+   - Database Data Block                             Yes
+   - Enforce Primary Key                             No
+   - Query Allowed                                   Yes
+   - Query Data Source Type                          Table
+   - Query Data Source Name                          
+   - Query Data Source Columns                       
+   - Query Data Source Arguments                     
+   - Alias                                           
+   - Include REF Item                                No
+   - WHERE Clause                                    
+   - ORDER BY Clause                                 
+   - Optimizer Hint                                  
+   - Insert Allowed                                  Yes
+   - Update Allowed                                  Yes
+   - Locking Mode                                    Automatic
+   - Delete Allowed                                  Yes
+   - Key Mode                                        Automatic
+   - Update Changed Columns Only                     No
+   - Enforce Column Security                         No
+   - Maximum Query Time                              0
+   - Maximum Records Fetched                         0
+   - DML Data Target Type                            Table
+   - DML Data Target Name                            
+   - Insert Procedure Name                           
+   - Insert Procedure Result Set Columns             
+   - Insert Procedure Arguments                      
+   - Update Procedure Name                           
+   - Update Procedure Result Set Columns             
+   - Update Procedure Arguments                      
+   - Delete Procedure Name                           
+   - Delete Procedure Result Set Columns             
+   - Delete Procedure Arguments                      
+   - Lock Procedure Name                             
+   - Lock Procedure Result Set Columns               
+   - Lock Procedure Arguments                        
+   - DML Array Size                                  1
+   - Precompute Summaries                            No
+   - DML Returning Value                             No
+   - Show Scroll Bar                                 No
+   - Scroll Bar Canvas                               
+   - Scroll Bar Tab Page                             
+   - Scroll Bar Orientation                          Vertical
+   - Scroll Bar X Position                           0
+   - Scroll Bar Y Position                           0
+   * Scroll Bar Width                                17
+   * Scroll Bar Length                               158
+   - Scroll Bar Height                               0
+   - Reverse Direction                               No
+   - Visual Attribute Group                          DEFAULT
+   - Foreground Color                                
+   - Background Color                                
+   - Fill Pattern                                    
+   - Direction                                       Default
+   * Triggers                                        
+     ----------
+     * Name                                          WHEN-NEW-BLOCK-INSTANCE
+     - Subclass Information                          
+     - Comments                                      
+     - Trigger Style                                 PL/SQL
+     * Trigger Text                                  
+
+declare
+x varchar(20);
+begin
+	SELECT TO_CHAR
+    (SYSDATE, 'DD-Mon-YYYY') "NOW" into x
+     FROM DUAL;
+     
+     :MAIN.MDATE:=x;
+end;
+
+     - Fire in Enter-Query Mode                      Yes
+     - Execution Hierarchy                           Override
+     - Display in 'Keyboard Help'                    No
+     - 'Keyboard Help' Text                          
+     - Trigger Steps                                 
+     ----------
+   * Items                                           
+     ----------
+     * Name                                          PUSH_BUTTON73
+     * Item Type                                     Push Button
+     - Subclass Information                          
+     - Comments                                      
+     - Help Book Topic                               
+     - Enabled                                       Yes
+     * Label                                         Ticket Booking
+     - Access Key                                    
+     - Implementation Class                          
+     - Iconic                                        No
+     - Icon Filename                                 
+     - Default Button                                No
+     - Popup Menu                                    
+     - Keyboard Navigable                            Yes
+     - Mouse Navigate                                Yes
+     - Previous Navigation Item                      
+     - Next Navigation Item                          
+     - Current Record Visual Attribute Group         
+     - Distance Between Records                      0
+     - Number of Items Displayed                     0
+     - Visible                                       Yes
+     * Canvas                                        CANVAS2
+     - Tab Page                                      
+     * X Position                                    108
+     * Y Position                                    209
+     * Width                                         190
+     * Height                                        23
+     - Visual Attribute Group                        DEFAULT
+     - Prompt Visual Attribute Group                 DEFAULT
+     * Foreground Color                              r50g0b0
+     * Background Color                              gray16
+     - Fill Pattern                                  
+     - Font                                          
+     * Font Name                                     Consolas
+     * Font Size                                     12
+     * Font Weight                                   Bold
+     * Font Style                                    Plain
+     * Font Spacing                                  Normal
+     - Prompt                                        
+     - Prompt Display Style                          First Record
+     - Prompt Justification                          Start
+     - Prompt Attachment Edge                        Start
+     - Prompt Alignment                              Start
+     - Prompt Attachment Offset                      0
+     - Prompt Alignment Offset                       0
+     - Prompt Reading Order                          Default
+     - Prompt Foreground Color                       
+     - Prompt Font                                   
+     - Prompt Font Name                              
+     - Prompt Font Size                              0
+     - Prompt Font Weight                            Medium
+     - Prompt Font Style                             Plain
+     - Prompt Font Spacing                           Normal
+     - Hint                                          
+     - Display Hint Automatically                    No
+     - Tooltip                                       
+     - Tooltip Visual Attribute Group                
+     - Direction                                     Default
+     - Triggers                                      
+     ----------
+     * Name                                          PUSH_BUTTON78
+     * Item Type                                     Push Button
+     - Subclass Information                          
+     - Comments                                      
+     - Help Book Topic                               
+     - Enabled                                       Yes
+     * Label                                         Train Information
+     - Access Key                                    
+     - Implementation Class                          
+     - Iconic                                        No
+     - Icon Filename                                 
+     - Default Button                                No
+     - Popup Menu                                    
+     - Keyboard Navigable                            Yes
+     - Mouse Navigate                                Yes
+     - Previous Navigation Item                      
+     - Next Navigation Item                          
+     - Current Record Visual Attribute Group         
+     - Distance Between Records                      0
+     - Number of Items Displayed                     0
+     - Visible                                       Yes
+     * Canvas                                        CANVAS2
+     - Tab Page                                      
+     * X Position                                    386
+     * Y Position                                    209
+     * Width                                         190
+     * Height                                        23
+     - Visual Attribute Group                        DEFAULT
+     - Prompt Visual Attribute Group                 DEFAULT
+     * Foreground Color                              r50g0b0
+     * Background Color                              gray16
+     - Fill Pattern                                  
+     - Font                                          
+     * Font Name                                     Consolas
+     * Font Size                                     12
+     * Font Weight                                   Bold
+     * Font Style                                    Plain
+     * Font Spacing                                  Normal
+     - Prompt                                        
+     - Prompt Display Style                          First Record
+     - Prompt Justification                          Start
+     - Prompt Attachment Edge                        Start
+     - Prompt Alignment                              Start
+     - Prompt Attachment Offset                      0
+     - Prompt Alignment Offset                       0
+     - Prompt Reading Order                          Default
+     - Prompt Foreground Color                       
+     - Prompt Font                                   
+     - Prompt Font Name                              
+     - Prompt Font Size                              0
+     - Prompt Font Weight                            Medium
+     - Prompt Font Style                             Plain
+     - Prompt Font Spacing                           Normal
+     - Hint                                          
+     - Display Hint Automatically                    No
+     - Tooltip                                       
+     - Tooltip Visual Attribute Group                
+     - Direction                                     Default
+     - Triggers                                      
+     ----------
+     * Name                                          PUSH_BUTTON76
+     * Item Type                                     Push Button
+     - Subclass Information                          
+     - Comments                                      
+     - Help Book Topic                               
+     - Enabled                                       Yes
+     * Label                                         Print Reports
+     - Access Key                                    
+     - Implementation Class                          
+     - Iconic                                        No
+     - Icon Filename                                 
+     - Default Button                                No
+     - Popup Menu                                    
+     - Keyboard Navigable                            Yes
+     - Mouse Navigate                                Yes
+     - Previous Navigation Item                      
+     - Next Navigation Item                          
+     - Current Record Visual Attribute Group         
+     - Distance Between Records                      0
+     - Number of Items Displayed                     0
+     - Visible                                       Yes
+     * Canvas                                        CANVAS2
+     - Tab Page                                      
+     * X Position                                    108
+     * Y Position                                    272
+     * Width                                         190
+     * Height                                        23
+     - Visual Attribute Group                        DEFAULT
+     - Prompt Visual Attribute Group                 DEFAULT
+     * Foreground Color                              r50g0b0
+     * Background Color                              gray16
+     - Fill Pattern                                  
+     - Font                                          
+     * Font Name                                     Consolas
+     * Font Size                                     12
+     * Font Weight                                   Bold
+     * Font Style                                    Plain
+     * Font Spacing                                  Normal
+     - Prompt                                        
+     - Prompt Display Style                          First Record
+     - Prompt Justification                          Start
+     - Prompt Attachment Edge                        Start
+     - Prompt Alignment                              Start
+     - Prompt Attachment Offset                      0
+     - Prompt Alignment Offset                       0
+     - Prompt Reading Order                          Default
+     - Prompt Foreground Color                       
+     - Prompt Font                                   
+     - Prompt Font Name                              
+     - Prompt Font Size                              0
+     - Prompt Font Weight                            Medium
+     - Prompt Font Style                             Plain
+     - Prompt Font Spacing                           Normal
+     - Hint                                          
+     - Display Hint Automatically                    No
+     - Tooltip                                       
+     - Tooltip Visual Attribute Group                
+     - Direction                                     Default
+     - Triggers                                      
+     ----------
+     * Name                                          PUSH_BUTTON79
+     * Item Type                                     Push Button
+     - Subclass Information                          
+     - Comments                                      
+     - Help Book Topic                               
+     - Enabled                                       Yes
+     * Label                                         Exit Application
+     - Access Key                                    
+     - Implementation Class                          
+     - Iconic                                        No
+     - Icon Filename                                 
+     - Default Button                                No
+     - Popup Menu                                    
+     - Keyboard Navigable                            Yes
+     - Mouse Navigate                                Yes
+     - Previous Navigation Item                      
+     - Next Navigation Item                          
+     - Current Record Visual Attribute Group         
+     - Distance Between Records                      0
+     - Number of Items Displayed                     0
+     - Visible                                       Yes
+     * Canvas                                        CANVAS2
+     - Tab Page                                      
+     * X Position                                    386
+     * Y Position                                    272
+     * Width                                         190
+     * Height                                        23
+     - Visual Attribute Group                        DEFAULT
+     - Prompt Visual Attribute Group                 DEFAULT
+     * Foreground Color                              r50g0b0
+     * Background Color                              gray16
+     - Fill Pattern                                  
+     - Font                                          
+     * Font Name                                     Consolas
+     * Font Size                                     12
+     * Font Weight                                   Bold
+     * Font Style                                    Plain
+     * Font Spacing                                  Normal
+     - Prompt                                        
+     - Prompt Display Style                          First Record
+     - Prompt Justification                          Start
+     - Prompt Attachment Edge                        Start
+     - Prompt Alignment                              Start
+     - Prompt Attachment Offset                      0
+     - Prompt Alignment Offset                       0
+     - Prompt Reading Order                          Default
+     - Prompt Foreground Color                       
+     - Prompt Font                                   
+     - Prompt Font Name                              
+     - Prompt Font Size                              0
+     - Prompt Font Weight                            Medium
+     - Prompt Font Style                             Plain
+     - Prompt Font Spacing                           Normal
+     - Hint                                          
+     - Display Hint Automatically                    No
+     - Tooltip                                       
+     - Tooltip Visual Attribute Group                
+     - Direction                                     Default
+     * Triggers                                      
+       ----------
+       * Name                                        WHEN-BUTTON-PRESSED
+       - Subclass Information                        
+       - Comments                                    
+       - Trigger Style                               PL/SQL
+       * Trigger Text                                
+
+exit_form;
+       - Fire in Enter-Query Mode                    Yes
+       - Execution Hierarchy                         Override
+       - Display in 'Keyboard Help'                  No
+       - 'Keyboard Help' Text                        
+       - Trigger Steps                               
+       ----------
+     ----------
+     * Name                                          PUSH_BUTTON74
+     * Item Type                                     Push Button
+     - Subclass Information                          
+     - Comments                                      
+     - Help Book Topic                               
+     - Enabled                                       Yes
+     * Label                                         Ticket Information
+     - Access Key                                    
+     - Implementation Class                          
+     - Iconic                                        No
+     - Icon Filename                                 
+     - Default Button                                No
+     - Popup Menu                                    
+     - Keyboard Navigable                            Yes
+     - Mouse Navigate                                Yes
+     - Previous Navigation Item                      
+     - Next Navigation Item                          
+     - Current Record Visual Attribute Group         
+     - Distance Between Records                      0
+     - Number of Items Displayed                     0
+     - Visible                                       Yes
+     * Canvas                                        CANVAS2
+     - Tab Page                                      
+     * X Position                                    108
+     * Y Position                                    240
+     * Width                                         190
+     * Height                                        23
+     - Visual Attribute Group                        DEFAULT
+     - Prompt Visual Attribute Group                 DEFAULT
+     * Foreground Color                              r50g0b0
+     * Background Color                              gray16
+     - Fill Pattern                                  
+     - Font                                          
+     * Font Name                                     Consolas
+     * Font Size                                     12
+     * Font Weight                                   Bold
+     * Font Style                                    Plain
+     * Font Spacing                                  Normal
+     - Prompt                                        
+     - Prompt Display Style                          First Record
+     - Prompt Justification                          Start
+     - Prompt Attachment Edge                        Start
+     - Prompt Alignment                              Start
+     - Prompt Attachment Offset                      0
+     - Prompt Alignment Offset                       0
+     - Prompt Reading Order                          Default
+     - Prompt Foreground Color                       
+     - Prompt Font                                   
+     - Prompt Font Name                              
+     - Prompt Font Size                              0
+     - Prompt Font Weight                            Medium
+     - Prompt Font Style                             Plain
+     - Prompt Font Spacing                           Normal
+     - Hint                                          
+     - Display Hint Automatically                    No
+     - Tooltip                                       
+     - Tooltip Visual Attribute Group                
+     - Direction                                     Default
+     - Triggers                                      
+     ----------
+     * Name                                          PUSH_BUTTON80
+     * Item Type                                     Push Button
+     - Subclass Information                          
+     - Comments                                      
+     - Help Book Topic                               
+     - Enabled                                       Yes
+     * Label                                         Employee Information
+     - Access Key                                    
+     - Implementation Class                          
+     - Iconic                                        No
+     - Icon Filename                                 
+     - Default Button                                No
+     - Popup Menu                                    
+     - Keyboard Navigable                            Yes
+     - Mouse Navigate                                Yes
+     - Previous Navigation Item                      
+     - Next Navigation Item                          
+     - Current Record Visual Attribute Group         
+     - Distance Between Records                      0
+     - Number of Items Displayed                     0
+     - Visible                                       Yes
+     * Canvas                                        CANVAS2
+     - Tab Page                                      
+     * X Position                                    386
+     * Y Position                                    240
+     * Width                                         190
+     * Height                                        23
+     - Visual Attribute Group                        DEFAULT
+     - Prompt Visual Attribute Group                 DEFAULT
+     * Foreground Color                              r50g0b0
+     * Background Color                              gray16
+     - Fill Pattern                                  
+     - Font                                          
+     * Font Name                                     Consolas
+     * Font Size                                     12
+     * Font Weight                                   Bold
+     * Font Style                                    Plain
+     * Font Spacing                                  Normal
+     - Prompt                                        
+     - Prompt Display Style                          First Record
+     - Prompt Justification                          Start
+     - Prompt Attachment Edge                        Start
+     - Prompt Alignment                              Start
+     - Prompt Attachment Offset                      0
+     - Prompt Alignment Offset                       0
+     - Prompt Reading Order                          Default
+     - Prompt Foreground Color                       
+     - Prompt Font                                   
+     - Prompt Font Name                              
+     - Prompt Font Size                              0
+     - Prompt Font Weight                            Medium
+     - Prompt Font Style                             Plain
+     - Prompt Font Spacing                           Normal
+     - Hint                                          
+     - Display Hint Automatically                    No
+     - Tooltip                                       
+     - Tooltip Visual Attribute Group                
+     - Direction                                     Default
+     - Triggers                                      
+     ----------
+     * Name                                          MDATE
+     * Item Type                                     Display Item
+     - Subclass Information                          
+     - Comments                                      
+     - Help Book Topic                               
+     * Justification                                 Center
+     - Popup Menu                                    
+     - Previous Navigation Item                      
+     - Next Navigation Item                          
+     - Data Type                                     Char
+     - Data Length Semantics                         Null
+     - Maximum Length                                30
+     - Initial Value                                 
+     - Format Mask                                   
+     - Copy Value from Item                          
+     - Synchronize with Item                         
+     - Calculation Mode                              None
+     - Formula                                       
+     - Summary Function                              None
+     - Summarized Block                              
+     - Summarized Item                               
+     - Current Record Visual Attribute Group         
+     - Distance Between Records                      0
+     - Number of Items Displayed                     0
+     - Database Item                                 Yes
+     - Column Name                                   
+     - Primary Key                                   No
+     - Query Only                                    No
+     - Visible                                       Yes
+     * Canvas                                        CANVAS2
+     - Tab Page                                      
+     * X Position                                    471
+     * Y Position                                    141
+     * Width                                         124
+     * Height                                        21
+     - Bevel                                         Lowered
+     - Rendered                                      Yes
+     - Visual Attribute Group                        DEFAULT
+     - Prompt Visual Attribute Group                 DEFAULT
+     * Foreground Color                              black
+     * Background Color                              r100g100b88
+     - Fill Pattern                                  
+     - Font                                          
+     * Font Name                                     Calibri
+     * Font Size                                     12
+     * Font Weight                                   Bold
+     * Font Style                                    Plain
+     * Font Spacing                                  Normal
+     - Prompt                                        
+     - Prompt Display Style                          First Record
+     - Prompt Justification                          Start
+     - Prompt Attachment Edge                        Start
+     - Prompt Alignment                              Start
+     - Prompt Attachment Offset                      0
+     - Prompt Alignment Offset                       0
+     - Prompt Reading Order                          Default
+     - Prompt Foreground Color                       
+     - Prompt Font                                   
+     - Prompt Font Name                              
+     - Prompt Font Size                              0
+     - Prompt Font Weight                            Medium
+     - Prompt Font Style                             Plain
+     - Prompt Font Spacing                           Normal
+     - Tooltip                                       
+     - Tooltip Visual Attribute Group                
+     - Initial Keyboard State                        Default
+     - Reading Order                                 Default
+     - Keyboard State                                Any
+     - Triggers                                      
+     ----------
+   - Relations                                       
+   ----------
+ * Canvases                                          
+   ----------
+   * Name                                            CANVAS2
+   - Canvas Type                                     Content
+   - Subclass Information                            
+   - Comments                                        
+   - Help Book Topic                                 
+   - Raise on Entry                                  No
+   - Popup Menu                                      
+   - Visible                                         Yes
+   * Window                                          WINDOW1
+   - Viewport X Position on Canvas                   0
+   * Viewport Y Position on Canvas                   0
+   * Width                                           735
+   * Height                                          395
+   - Bevel                                           Lowered
+   - Visual Attribute Group                          DEFAULT
+   - Foreground Color                                
+   * Background Color                                white
+   - Fill Pattern                                    
+   - Direction                                       Default
+   * Graphics Objects                                
+     ----------
+     * Name                                          TEXT11
+     * Graphics Type                                 Text
+     - Subclass Information                          
+     * X Position                                    133
+     * Y Position                                    36
+     * Width                                         411
+     * Height                                        29
+     - Line Width                                    0
+     - Dash Style                                    Solid
+     - Cap Style                                     Butt
+     - Join Style                                    Mitre
+     - Rotation Angle                                0
+     - Custom Spacing                                0
+     - Line Spacing                                  Single
+     - Fixed Bounding Box                            No
+     - Wrap Text                                     Yes
+     - Bounding Box Scaleable                        Yes
+     - Font Scaleable                                No
+     * Horizontal Justification                      Start
+     - Vertical Justification                        Top
+     - Horizontal Origin                             Left
+     - Vertical Origin                               Top
+     * Bevel                                         None
+     - Visual Attribute Group                        DEFAULT
+     - Foreground Color                              
+     - Background Color                              
+     * Fill Pattern                                  none
+     - Edge Foreground Color                         
+     * Edge Background Color                         white
+     * Edge Pattern                                  none
+     - Direction                                     Default
+     * Compound Text Objects                         
+       ----------
+       * Name                                        CMPTXT12
+       * Simple Text Objects                         
+         ----------
+         * Name                                      TEXTSTR13
+         - Help Book Topic                           
+         * List Item Value                           Welcome to Railway Management System
+         * Foreground Color                          black
+         - Font                                      
+         * Font Name                                 Calibri
+         * Font Size                                 24
+         * Font Weight                               Medium
+         * Font Style                                Plain
+         * Font Spacing                              Normal
+         ----------
+       ----------
+     ----------
+     * Name                                          IMAGE26
+     * Graphics Type                                 Image
+     - Subclass Information                          
+     - Display Quality                               High
+     * X Position                                    38
+     * Y Position                                    22
+     * Width                                         68
+     * Height                                        62
+     * Dither                                        No
+     - Clip X Position                               0
+     - Clip Y Position                               0
+     * Clip Width                                    68
+     * Clip Height                                   62
+     - Visual Attribute Group                        DEFAULT
+     ----------
+     * Name                                          FRAME27
+     * Graphics Type                                 Frame
+     - Subclass Information                          
+     - Layout Data Block                             
+     * Update Layout                                 Manually
+     - Layout Style                                  Form
+     - Frame Alignment                               Column
+     - Single Object Alignment                       Start
+     * Horizontal Margin                             8
+     * Vertical Margin                               16
+     * Horizontal Object Offset                      17
+     - Vertical Object Offset                        0
+     - Allow Expansion                               Yes
+     - Shrinkwrap                                    No
+     - Vertical Fill                                 Yes
+     - Maximum Objects per Line                      0
+     - Start Prompt Alignment                        Start
+     * Start Prompt Offset                           8
+     - Top Prompt Alignment                          Center
+     - Top Prompt Offset                             0
+     - Allow Multi-line Prompts                      Yes
+     - Allow Top-Attached Prompts                    No
+     - Allow Start-Attached Prompts                  No
+     - Number of Records Displayed                   1
+     - Distance Between Records                      0
+     - Show Scroll Bar                               No
+     - Scroll Bar Alignment                          End
+     * Scroll Bar Width                              17
+     * X Position                                    88
+     * Y Position                                    171
+     * Width                                         503
+     * Height                                        165
+     * Line Width                                    .01
+     - Dash Style                                    Solid
+     - Cap Style                                     Butt
+     * Join Style                                    Bevel
+     * Bevel                                         None
+     - Visual Attribute Group                        DEFAULT
+     - Frame Title Visual Attribute Group            DEFAULT
+     * Foreground Color                              darkred
+     * Background Color                              r100g100b88
+     * Fill Pattern                                  transparent
+     - Edge Foreground Color                         
+     - Edge Background Color                         
+     - Edge Pattern                                  
+     * Frame Title                                   Main Menu
+     * Frame Title Alignment                         Start
+     * Frame Title Offset                            6
+     * Frame Title Spacing                           3
+     - Frame Title Reading Order                     Default
+     * Frame Title Foreground Color                  black
+     - Title Font                                    
+     * Frame Title Font Name                         ubuntu mono
+     * Frame Title Font Size                         15
+     * Frame Title Font Weight                       Light
+     * Frame Title Font Style                        Blink
+     * Frame Title Font Spacing                      Normal
+     ----------
+   ----------
+ - Editors                                           
+ - Form Parameters                                   
+ - Lists of Values                                   
+ - Menus                                             
+ - Object Groups                                     
+ - Program Units                                     
+ - Property Classes                                  
+ - Record Groups                                     
+ - Reports                                           
+ - Visual Attributes                                 
+ * Windows                                           
+   ----------
+   * Name                                            WINDOW1
+   - Subclass Information                            
+   - Comments                                        
+   - Help Book Topic                                 
+   - Title                                           
+   - Primary Canvas                                  
+   - Horizontal Toolbar Canvas                       
+   - Vertical Toolbar Canvas                         
+   - Window Style                                    Document
+   - Modal                                           No
+   - Hide on Exit                                    No
+   - Close Allowed                                   Yes
+   - Move Allowed                                    Yes
+   - Resize Allowed                                  Yes
+   - Maximize Allowed                                Yes
+   - Minimize Allowed                                Yes
+   - Minimized Title                                 
+   - Icon Filename                                   
+   - Inherit Menu                                    Yes
+   - X Position                                      0
+   - Y Position                                      0
+   * Width                                           736
+   * Height                                          1004
+   - Bevel                                           Lowered
+   - Show Horizontal Scroll Bar                      No
+   - Show Vertical Scroll Bar                        No
+   - Visual Attribute Group                          DEFAULT
+   - Foreground Color                                
+   - Background Color                                
+   - Fill Pattern                                    
+   - Font                                            
+   - Font Name                                       
+   - Font Size                                       0
+   - Font Weight                                     Medium
+   - Font Style                                      Plain
+   - Font Spacing                                    Normal
+   - Direction                                       Default
+   ----------
